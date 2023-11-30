@@ -7,7 +7,6 @@ class Rectangle:
         number_of_instances (int): The number of Rectangle instances.
         print_symbol (any): The symbol used for string representation.
     """
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -58,7 +57,7 @@ class Rectangle:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
-    @stationmethod
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Return the Rectangle with the greater area.
         Args:
